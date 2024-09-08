@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html{font-size: 62.5%;} /* 10px = 1rem */
+table { border-collapse: collapse; width: 100%; }
+ol, ul { list-style: none; }
+a { color: #000; text-decoration: none; }
+address,em { font-style: normal; }
+caption,legend { display: none; }
+select,input,fieldset { border: 0; }
+body{color: #fff; line-height: 1.5; font-size: 1.6rem; font-family:'Pretendard', sans-serif; overflow-x: hidden; width: 100vw; height: 100vh;}
+
+.wrap{background: url(../img//main/bg.png) no-repeat center / cover; width: 100%; height: 100%;}
+.img_wrapper{background: rgba(0,0,0,0.3); backdrop-filter: blur(5px);}
+
+.profile{text-align: center; display: flex; flex-direction: column; align-items: center; padding: 50px;}
+.thumb{width: 200px; height: 200px; border-radius: 50%; overflow: hidden; background: #fff}
+.name{padding: 10px 0; font-size: 4rem; font-weight: 400;}
+.title{font-size: 2rem; font-weight: 400;}
+.contact{display: flex; padding-top: 20px;}
+.contact li{width: 250px; height: 100px;}
+.contact .mail{background: url(../img/main/mail.png) no-repeat center;}
+.contact .phone{background: url(../img/main/phone.png) no-repeat center;}
+
+.port_sns{display: flex ;gap: 250px; justify-content: center; position: relative;}
+.port_sns::before{content: ""; width: 1px; height: 150px; background: #696F6E; position: absolute; left: calc(50% - 0.5px); top: calc(50% - 75px);}
+
+.port_sns .portfolio{width: 400px; height: 350px; border-radius: 20px; background: url(../img//main/portpolio.png) no-repeat center 45% rgba(146, 181, 179, 0.5); text-align: center;}
+.port_sns .portfolio p{padding-top: 275px; font-size: 2.5rem; color: #fff;}
+
+.port_sns .sns li{width: 400px; height: 80px; border-radius: 30px; background: rgba(217, 217, 217, 0.5); margin-bottom: 55px; padding: 25px 0 25px 100px; position: relative;}
+
+.port_sns .sns li a{font-size: 1.8rem; color: #fff;}
+.port_sns .sns li:nth-child(1)::before{content: ""; width: 40px; height: 40px; display: block; background: url(../img/main/insta.png) no-repeat center; position: absolute; left: 30px; top: calc(50% - 20px);}
+.port_sns .sns li:nth-child(2)::before{content: ""; width: 40px; height: 40px; display: block; background: url(../img/main/facebook.png) no-repeat center; position: absolute; left: 30px; top: calc(50% - 20px);}
+.port_sns .sns li:nth-child(3)::before{content: ""; width: 40px; height: 40px; display: block; background: url(../img/main/x.png) no-repeat center; position: absolute; left: 30px; top: calc(50% - 20px);}
+.port_sns .sns p{text-align: center; padding-top: 135px; font-size: 2.5rem;}
+
+
+
+
+/* sub2 */
+.sub2_wrap {align-items: center; display: flex; flex-direction: column;}
+.sub2_wrap .img{width: 50%; height: 100%;}
+.sub2_wrap .img img{display: block; width: 100%; height: 100%;}
+.btn_go{position: fixed; right: 10%; top: 50%;}
